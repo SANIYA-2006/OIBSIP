@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landing Page with Images</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px 0;
+    }
+
+    header {
+      background-color: #343a40;
+      color: white;
+      padding: 20px 0;
+    }
+
+    header h1 {
+      margin-bottom: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+
+    .hero {
+      background-color: #007bff;
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .hero img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 20px;
+      border-radius: 8px;
+    }
+
+    .hero .btn {
+      display: inline-block;
+      margin-top: 20px;
+      background: white;
+      color: #007bff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .about, .contact {
+      padding: 40px 0;
+      text-align: center;
+    }
+
+    .about img {
+      max-width: 400px;
+      width: 100%;
+      margin-top: 20px;
+      border-radius: 10px;
+    }
+
+    .features {
+      background-color: #e9ecef;
+      padding: 40px 0;
+    }
+
+    .features h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .feature-boxes {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .box {
+      background: white;
+      padding: 20px;
+      flex: 1;
+      min-width: 200px;
+      max-width: 300px;
+      text-align: center;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .box img {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 15px;
+      border-radius: 50%;
+    }
+
+    footer {
+      background-color: #343a40;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>My Landing Page</h1>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Welcome to My Website</h2>
+      <p>This is a beginner-friendly landing page using HTML and CSS.</p>
+      <a href="#contact" class="btn">Get Started</a>
+      <img src="https://picsum.photos/800/300" alt="Hero Image" />
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About</h2>
+      <p>This page showcases a simple layout using structured sections, images, and CSS styling for alignment and design.</p>
+      <img src="https://picsum.photos/400/250" alt="About Image" />
+    </div>
+  </section>
+
+  <section id="features" class="features">
+    <div class="container">
+      <h2>Features</h2>
+      <div class="feature-boxes">
+        <div class="box">
+          <img src="https://picsum.photos/80" alt="Clean Layout" />
+          <h3>Clean Layout</h3>
+          <p>Organized content with spacing and structure.</p>
+        </div>
+        <div class="box">
+          <img src="https://picsum.photos/81" alt="Responsive Design" />
+          <h3>Responsive Design</h3>
+          <p>Works well on mobile and desktop screens.</p>
+        </div>
+        <div class="box">
+          <img src="https://picsum.photos/82" alt="Customization" />
+          <h3>Easy to Customize</h3>
+          <p>Edit code easily to suit your brand or project.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>Email: info@example.com</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 My Landing Page</p>
+    </div>
+  </footer>
+
+</body>
+</html>
