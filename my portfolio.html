@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sardar Saniya | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #1f1c2c, #928dab);
+      color: #fff;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    .role {
+      font-size: 1.1rem;
+      color: #ccc;
+      margin: 10px 0 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #ffb400;
+      color: #000;
+      padding: 12px 24px;
+      border-radius: 30px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #fff;
+      color: #000;
+    }
+
+    header img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 5px solid #ffb400;
+      margin-top: 25px;
+      object-fit: cover;
+      transition: 0.4s ease;
+    }
+
+    header img:hover {
+      transform: scale(1.05);
+    }
+
+    nav {
+      margin-top: 20px;
+    }
+
+    nav a {
+      color: #eee;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffb400;
+    }
+
+    .stats {
+      display: flex;
+      justify-content: space-between;
+      margin: 50px 0;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .stats div {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 15px;
+      padding: 20px;
+      flex: 1;
+      min-width: 220px;
+      text-align: center;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .stats a {
+      color: #ffb400;
+      text-decoration: none;
+    }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-between;
+      margin-bottom: 50px;
+    }
+
+    .service {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 30px 20px;
+      flex: 1;
+      min-width: 250px;
+      border-radius: 15px;
+      text-align: center;
+      backdrop-filter: blur(10px);
+      transition: 0.4s ease;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+    }
+
+    .service:hover {
+      transform: translateY(-8px);
+      background-color: #ffb400;
+      color: #000;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 10px;
+      color: #ddd;
+      font-size: 0.9rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    @media (max-width: 768px) {
+      .stats, .services {
+        flex-direction: column;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>SARDAR SANIYA</h1>
+      <p class="role">Frontend Developer based in India</p>
+      <a href="#" class="btn">My Story →</a><br>
+      <img src="C:\Users\saniy\OneDrive\Desktop\my photo.jpg" alt="Saniya Photo">
+      <nav>
+        <a href="#">Services</a>
+        <a href="#">Works</a>
+        <a href="#">Blog</a>
+      </nav>
+    </header>
+
+    <section class="stats">
+      <div>
+        <h3>Any Type Of Query</h3>
+        <p><a href="mailto:saniyasardar70@gmail.com">saniyasardar70@gmail.com</a></p>
+      </div>
+      <div>
+        <h3>Experience</h3>
+        <p>Fresher</p>
+      </div>
+    </section>
+
+    <section class="services">
+      <div class="service" onclick="alert('You clicked Product Designer!')">
+        <h4>Product Designer</h4>
+        <p>20+ Projects</p>
+      </div>
+      <div class="service" onclick="alert('You clicked Branding Designer!')">
+        <h4>Branding Designer</h4>
+        <p>15 Projects</p>
+      </div>
+      <div class="service" onclick="alert('You clicked Full Stack Developer!')">
+        <h4>Full Stack Developer</h4>
+        <p>10 Projects</p>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 Sardar Saniya. All rights reserved.</p>
+    </footer>
+  </div>
+
+</body>
+</html>
